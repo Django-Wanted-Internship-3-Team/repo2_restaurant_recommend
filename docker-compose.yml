@@ -23,7 +23,7 @@ services:
       dockerfile: Dockerfile
     command: poetry run python manage.py runserver 0.0.0.0:8000
     volumes:
-      - .:/app
+      - ./app:/app
     environment:
       - POSTGRESQL_HOST=postgres
     ports:
