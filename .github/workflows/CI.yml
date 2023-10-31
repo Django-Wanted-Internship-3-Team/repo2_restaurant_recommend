@@ -13,7 +13,7 @@ jobs:
       - name: Build docker
         run: docker compose build
 
-      - name: Type check
+      - name: Run mypy
         run: docker compose run django poetry run mypy --config mypy.ini restaurants_recommendation/
 
       - name: Run isort
