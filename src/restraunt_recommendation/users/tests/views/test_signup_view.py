@@ -37,3 +37,14 @@ class RegistrationTestCase(APITestCase):
             content_type="application/json",
         )
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_password_similarity_validator(self):
+        response = self.client.post(
+            path=reverse("signup"),
+            data={
+                "username": "testuser3",
+                "password": "testuser312"
+            },
+            content_type="application/json",
+        )
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
