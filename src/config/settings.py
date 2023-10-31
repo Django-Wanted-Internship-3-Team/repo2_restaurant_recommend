@@ -23,7 +23,11 @@ THIRD_PARTY_APPS = [
     "drf_yasg",
 ]
 
-LOCAL_APPS = []
+LOCAL_APPS = [
+    "restraunt_recommendation.users.apps.UsersConfig",
+    "restraunt_recommendation.restraunts.apps.RestrauntsConfig",
+    "restraunt_recommendation.reviews.apps.ReviewsConfig",
+]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -46,7 +50,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "config.urls"
+ROOT_URLCONF = "config.root_urls"
 
 TEMPLATES = [
     {
