@@ -30,6 +30,5 @@ jobs:
 
       - name: Run Test
         run: |
-          docker compose run django poetry run coverage report &&
           docker compose run django poetry run coverage run manage.py test &&
           docker compose run django poetry run coverage report --fail-under=80

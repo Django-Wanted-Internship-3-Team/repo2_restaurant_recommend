@@ -25,6 +25,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "restaurants_recommendation.users.apps.UsersConfig",
+    "restaurants_recommendation.common.apps.CommonConfig",
     "restaurants_recommendation.restaurants.apps.RestaurantsConfig",
     "restaurants_recommendation.reviews.apps.ReviewsConfig",
 ]
