@@ -1,7 +1,7 @@
 from django.contrib.auth.models import AbstractBaseUser
 from django.db import models
 
-from restraunt_recommendation.users.managers import UserManager
+from restaurant_recommendation.users.managers import UserManager
 
 
 class User(AbstractBaseUser):
