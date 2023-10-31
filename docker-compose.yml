@@ -22,8 +22,7 @@ services:
       context: .
       dockerfile: Dockerfile
     command: >
-      bash -c  "poetry run python manage.py makemigrations &&
-       poetry run python manage.py migrate &&
+      bash -c  "ls -al &&
        poetry run python manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./src/:/app/src/
