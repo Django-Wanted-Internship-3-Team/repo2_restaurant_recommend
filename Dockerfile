@@ -19,4 +19,4 @@ COPY pyproject.toml .
 
 RUN poetry install
 
-COPY . /app
+COPY . /app/
