@@ -21,9 +21,9 @@ urlpatterns = [
     # Admin
     path("admin/", admin.site.urls),
     # API
-    path("api/users/", include("restraunt_recommendation.users.urls")),
-    path("api/restaurants/", include("restraunt_recommendation.restraunts.urls")),
-    path("api/review/", include("restraunt_recommendation.reviews.urls")),
+    path("api/users/", include("restaurants_recommendation.users.urls")),
+    path("api/restaurants/", include("restaurants_recommendation.restaurants.urls")),
+    path("api/review/", include("restaurants_recommendation.reviews.urls")),
     # Swagger
     path("swagger/docs/", schema_view.with_ui("swagger", cache_timeout=0), name="schema-swagger-ui"),
 ]

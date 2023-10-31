@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class RestrauntsConfig(AppConfig):
+class ReviewsConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "restraunt_recommendation.restraunts"
+    name = "restaurants_recommendation.reviews"
