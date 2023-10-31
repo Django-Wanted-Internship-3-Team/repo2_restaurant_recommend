@@ -15,7 +15,7 @@ ENV PATH="${PATH}:${POETRY_VENV}/bin"
 RUN mkdir /app/
 WORKDIR /app/
 
-COPY pyproject.toml .
+COPY pyproject.toml /app/
 
 RUN poetry install
 
