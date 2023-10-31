@@ -13,7 +13,7 @@ jobs:
       - name: Build docker
         run: docker compose build
 
-      - name: Run ls
+      - name: Run ls -al
         run: docker compose run django ls -al src
 
       - name: Type check
