@@ -13,6 +13,12 @@ jobs:
       - name: Build docker
         run: docker compose build
 
+      - name: Run cd src && ls -al
+        run: docker compose run django cd src && ls -al
+
+      - name: Type check
+        run: docker compose run django poetry run mypy --config mypy.ini src/restaurant_recommendation
+
       - name: Run isort
         run: docker compose run django poetry run isort . --check
 
@@ -21,12 +27,6 @@ jobs:
 
       - name: Run flake8
         run: docker compose run django poetry run flake8
-
-      - name: Run ls -al
-        run: docker compose run django ls -al
-
-      - name: Type check
-        run: docker compose run django poetry run mypy --config mypy.ini src/restaurant_recommendation
 
       - name: Migration test database
         run: docker compose run django poetry run python src/manage.py migrate
