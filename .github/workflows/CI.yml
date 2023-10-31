@@ -25,6 +25,11 @@ jobs:
       - name: Run flake8
         run: docker compose run django poetry run flake8
 
+      - name: Exist restaurant_recommendation docker container
+        run: |
+          docker compose exec -it django /bin/bash &&
+          ls -al
+
       - name: Type check
         run: docker compose run django poetry run mypy --config mypy.ini src/restaurant_recommendation
 
