@@ -87,17 +87,12 @@ DATABASES = {
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
-        "option": {
-            "user_attributes": "username"
-        }
+    {"NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator", 
+    "option": {"user_attributes": "username"}
     },
     {
         "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
-        "option": {
-            "min_length": 8,
-        }
+        "option": { "min_length": 8 },
     },
     {
         "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
@@ -190,9 +185,9 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
     "ROTATE_REFRESH_TOKENS": False,
-    'ALGORITHM': 'HS256',
+    "ALGORITHM": "HS256",
     "BLACKLIST_AFTER_ROTATION": True,
-    'SIGNING_KEY': SECRET_KEY,
+    "SIGNING_KEY": SECRET_KEY,
     "VERIFYING_KEY": None,
     "AUTH_HEADER_TYPES": ("Bearer",),
     "USER_ID_FIELD": "id",

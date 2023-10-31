@@ -2,7 +2,7 @@ from django.contrib.auth.models import AbstractBaseUser
 from django.db import models
 
 from restraunt_recommendation.users.managers import UserManager
-    
+
 
 class User(AbstractBaseUser):
     username = models.CharField(max_length=32, unique=True)
@@ -18,8 +18,7 @@ class User(AbstractBaseUser):
     objects = UserManager()
 
     USERNAME_FIELD = "username"
-    REQUIRED_FIELDS =[]
-
+    REQUIRED_FIELDS = []
 
     class Meta:
         db_table = "users"
