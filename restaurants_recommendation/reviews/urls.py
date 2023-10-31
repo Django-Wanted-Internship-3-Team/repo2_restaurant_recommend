@@ -1,5 +1,3 @@
-from typing import List
+from typing import Callable, List
 
-from django.urls import path
-
-urlpatterns: List[path] = []
+urlpatterns: List[Callable] = []
