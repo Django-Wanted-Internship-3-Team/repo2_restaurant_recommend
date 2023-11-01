@@ -7,7 +7,7 @@ from restaurants_recommendation.reviews.models import Review
 from restaurants_recommendation.users.models import User
 
 
-class RestaurantListViewTest(APITestCase):
+class RestaurantDetailViewTest(APITestCase):
     view_url = reverse("restaurant_detail", kwargs={"restaurant_id": 1})
 
     @classmethod
