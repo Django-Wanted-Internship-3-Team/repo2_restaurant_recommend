@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                 ('longitude', models.CharField(max_length=32)),
                 ('is_admin', models.BooleanField(default=False)),
                 ('is_active', models.BooleanField(default=True)),
-                ('is_lunch_recommendation', models.BooleanField(default=False)),
+                ('is_lunch_recommend', models.BooleanField(default=False)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
             ],
