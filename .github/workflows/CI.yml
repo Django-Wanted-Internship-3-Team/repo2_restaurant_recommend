@@ -13,23 +13,22 @@ jobs:
       - name: Build docker
         run: docker compose build
 
-      - name: Migration test database
-        run: docker compose run django poetry run python src/manage.py migrate
+      - name: Run mypy
+        run: docker compose run django poetry run mypy --config mypy.ini restaurants_recommendation/
 
       - name: Run isort
-        run: docker compose run django poetry run isort . --check
+        run: docker compose run django poetry run isort restaurants_recommendation/ --check
 
       - name: Run black
-        run: docker compose run django poetry run black . --check
+        run: docker compose run django poetry run black restaurants_recommendation/ --check
 
       - name: Run flake8
         run: docker compose run django poetry run flake8
 
-      - name: Type check
-        run: docker compose run django poetry run mypy --config mypy.ini src/restraunt_recommendation/
+      - name: Migration test database
+        run: docker compose run django poetry run python manage.py migrate
 
       - name: Run Test
         run: |
-          docker compose run django poetry run coverage report &&
-          docker compose run django poetry run coverage run src/manage.py test &&
+          docker compose run django poetry run coverage run manage.py test &&
           docker compose run django poetry run coverage report --fail-under=80
