@@ -1,8 +1,9 @@
-from django.urls import path
 from typing import Callable, List
 
-from users.views import SignupView
+from django.urls import URLPattern, path
 
-urlpatterns: List[Callable] = [
+from restaurants_recommendation.users.views import SignupView
+
+urlpatterns: List[URLPattern] = [
     path("signup/", SignupView.as_view(), name="signup"),
 ]
