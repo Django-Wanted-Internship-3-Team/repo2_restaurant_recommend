@@ -6,7 +6,7 @@ from restaurants_recommendation.users.models import User
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ("username", "latitude", "longitude", "is_admin", "is_active", "is_lunch_recommend", "created_at", "updated_at")
+        fields = ("username", "latitude", "longitude", "is_lunch_recommend", "created_at", "updated_at")
 
 
 class UserSignupSerializer(serializers.ModelSerializer):
