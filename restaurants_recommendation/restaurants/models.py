@@ -3,8 +3,8 @@ from django.db import models
 
 class Restaurant(models.Model):
     restaurant_code = models.CharField(max_length=128, unique=True)
-    location = models.CharField(max_length=128, null=True)
     location_code = models.CharField(max_length=64, null=True)
+    location = models.ForeignKey("RestaurantLocation", on_delete=models.SET_NULL, null=True)
     business_name = models.CharField(max_length=64, null=True)
     licensing_at = models.CharField(max_length=16, null=True)
     operating_status = models.CharField(max_length=16, null=True)
@@ -32,3 +32,16 @@ class Restaurant(models.Model):
 
     def __str__(self):
         return self.business_name
+
+
+class RestaurantLocation(models.Model):
+    do_si = models.CharField(max_length=32, help_text="도,시")
+    sgg = models.CharField(max_length=32, help_text="시,군,구")
+    longitude = models.CharField(max_length=32)
+    latitude = models.CharField(max_length=32)
+
+    class Meta:
+        db_table = "restaurant_locations"
+
+    def __str__(self):
+        return f"{self.city} {self.district}"
