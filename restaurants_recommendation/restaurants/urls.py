@@ -1,3 +1,7 @@
-from typing import Callable, List
+from django.urls import path
 
-urlpatterns: List[Callable] = []
+from restaurants_recommendation.restaurants.views import LocationListView
+
+urlpatterns = [
+    path("locations/", LocationListView.as_view(), name="location_list"),
+]
