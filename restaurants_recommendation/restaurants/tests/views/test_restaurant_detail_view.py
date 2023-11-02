@@ -1,5 +1,6 @@
 import json
 
+from django.core.cache import cache
 from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
@@ -46,6 +47,15 @@ class RestaurantDetailViewTest(APITestCase):
             HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_get_restaurant_detail_cache_success(self):
+        response = self.client.get(
+            path=self.view_url,
+            HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
+        )
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIsNotNone(cache.get("restaurant_detail:1"))
+        cache.clear()
 
     def test_get_restaurant_detail_fail_unauthenticated(self):
         response = self.client.get(
