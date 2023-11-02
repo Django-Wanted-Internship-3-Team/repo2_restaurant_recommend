@@ -7,10 +7,10 @@ from rest_framework.views import APIView
 
 from restaurants_recommendation.users.models import User
 from restaurants_recommendation.users.serializers import (
+    UserDetailSerializer,
     UserLoginSerializer,
     UserSerializer,
     UserSignupSerializer,
-    UserUpdateSerializer,
 )
 
 
@@ -62,12 +62,32 @@ class LoginView(APIView):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 
-class UserUpdateView(APIView):
+class UserDetailView(APIView):
     permission_classes = [permissions.IsAuthenticated]
 
     @swagger_auto_schema(
-        operation_summary="유저 상세 정보 업데이트",
-        request_body=UserUpdateSerializer,
+        operation_summary="유저 상세 정보 조회",
+        responses={status.HTTP_200_OK: UserSerializer},
+    )
+    def get(self, request: Request, user_id: int) -> Response:
+        """
+        사용자 상세 정보를 조회합니다.
+
+        Returns:
+            username (str): 사용자 계정 이름.
+            latitude (str): 사용자의 위치 중 위도
+            longitude (str): 사용자의 위치 중 경도
+            is_lunch_recommend (bool): 점심 메뉴 추천 사용여부
+            created_at (str): 사용자 계정 생성 일자
+            updated_at (str): 사용자 계정 수정 일자
+        """
+        user = get_object_or_404(User, id=user_id)
+        serializer = UserSerializer(user, data=request.data)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+    @swagger_auto_schema(
+        operation_summary="유저 정보 업데이트",
+        request_body=UserDetailSerializer,
         responses={status.HTTP_200_OK: UserSerializer},
     )
     def put(self, request: Request, user_id: int) -> Response:
@@ -84,7 +104,7 @@ class UserUpdateView(APIView):
             User: 위치 정보, 점심 메뉴 추천 정보가 업데이트된 사용자 객체.
         """
         user = get_object_or_404(User, id=user_id)
-        serializer = UserUpdateSerializer(user, data=request.data)
+        serializer = UserDetailSerializer(user, data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status=status.HTTP_200_OK)
