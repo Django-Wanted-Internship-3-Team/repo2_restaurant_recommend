@@ -40,7 +40,7 @@ class LoginView(APIView):
     @swagger_auto_schema(
         operation_summary="유저 로그인",
         request_body=UserLoginSerializer,
-        responses={status.HTTP_201_CREATED: UserLoginSerializer},
+        responses={status.HTTP_200_OK: UserLoginSerializer},
     )
     def post(self, request: Request) -> Response:
         """
