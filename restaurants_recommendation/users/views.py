@@ -44,7 +44,7 @@ class LoginView(APIView):
     )
     def post(self, request: Request) -> Response:
         """
-        username, paswword를 받아 유저 계정을 활성화하고 JWT 토큰을 발급합니다.
+        사용자 이름(username)과 비밀번호(password)를 받아 유저 계정을 활성화하고 JWT 토큰을 발급합니다.
 
         Args:
             username (str): 사용자 계정 이름.
