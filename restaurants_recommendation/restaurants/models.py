@@ -18,10 +18,11 @@ class Restaurant(models.Model):
     total_facility_size = models.CharField(max_length=32, null=True)
     number_of_female_employees = models.IntegerField(null=True)
     surrounding_area_description = models.CharField(max_length=32, null=True)
+    sanitary_industry_type = models.CharField(max_length=32, null=True)
     sanitary_business_type = models.CharField(max_length=32, null=True)
     total_employees_count = models.IntegerField(null=True)
-    street_address = models.CharField(max_length=32, null=True)
-    parcel_address = models.CharField(max_length=32, null=True)
+    street_address = models.CharField(max_length=128, null=True)
+    parcel_address = models.CharField(max_length=128, null=True)
     postal_code = models.CharField(max_length=32, null=True)
     latitude = models.CharField(max_length=32)
     longitude = models.CharField(max_length=32)
@@ -44,4 +45,4 @@ class RestaurantLocation(models.Model):
         db_table = "restaurant_locations"
 
     def __str__(self):
-        return f"{self.city} {self.district}"
+        return f"{self.do_si} {self.sgg}"
