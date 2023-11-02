@@ -1,3 +1,5 @@
+from typing import Any
+
 from django.contrib.auth import authenticate
 from rest_framework import serializers
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
@@ -54,3 +56,9 @@ class UserLoginSerializer(serializers.Serializer):
             user.is_active = True
             user.save()
         return user
+
+
+class UserUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ("latitude", "longitude", "is_lunch_recommend")
