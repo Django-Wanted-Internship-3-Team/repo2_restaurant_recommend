@@ -5,7 +5,6 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
 
-from restaurants_recommendation.users.models import User
 from restaurants_recommendation.users.serializers import (
     UserDetailSerializer,
     UserLoginSerializer,
