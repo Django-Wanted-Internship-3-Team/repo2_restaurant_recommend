@@ -51,7 +51,8 @@ class RestaurantListSerializer(serializers.ModelSerializer):
 
     def get_distance(self, obj):
         return f"{obj.distance} km"
-      
+
+
 class RestaurantDetailSerializer(serializers.ModelSerializer):
     location = LocationListSerializer()
 
