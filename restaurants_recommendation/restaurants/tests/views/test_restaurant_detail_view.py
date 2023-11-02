@@ -1,3 +1,5 @@
+import json
+
 from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
@@ -31,19 +33,22 @@ class RestaurantDetailViewTest(APITestCase):
             )
 
     def setUp(self):
-        pass
-        # self.access_token = self.client.post(reverse("token_obtain_pair"), self.user_data).data["access"]
+        response = self.client.post(
+            path=reverse("login"),
+            data=json.dumps(self.user_data),
+            content_type="application/json",
+        )
+        self.access_token = response.data["token"]["access"]
 
     def test_get_restaurant_detail_success(self):
         response = self.client.get(
             path=self.view_url,
-            # HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
+            HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
-    # @TODO: 로그인 로직 구현 후 주석 풀기 @SaJH
-    # def test_get_restaurant_detail_fail_unauthenticated(self):
-    #     response = self.client.get(
-    #       path=self.view_url,
-    #     )
-    #     self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+    def test_get_restaurant_detail_fail_unauthenticated(self):
+        response = self.client.get(
+            path=self.view_url,
+        )
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)

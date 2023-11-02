@@ -1,3 +1,5 @@
+import json
+
 from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
@@ -41,8 +43,12 @@ class RestaurantListViewTest(APITestCase):
         )
 
     def setUp(self):
-        pass
-        # self.access_token = self.client.post(reverse("token_obtain_pair"), self.user_data).data["access"]
+        response = self.client.post(
+            path=reverse("login"),
+            data=json.dumps(self.user_data),
+            content_type="application/json",
+        )
+        self.access_token = response.data["token"]["access"]
 
     def test_get_restaurant_list_type_hold_location_success(self):
         response = self.client.get(
@@ -53,8 +59,8 @@ class RestaurantListViewTest(APITestCase):
                 "lon": "127.0495556",
                 "range": 100.0,
                 "order_by": "distance",
-            }
-            # HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
+            },
+            HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
         )
         self.assertEqual(response.data["results"][0]["restaurant_code"], "서울역")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -68,8 +74,8 @@ class RestaurantListViewTest(APITestCase):
                 "lon": "126.97814305793757",
                 "range": 100.0,
                 "order_by": "distance",
-            }
-            # HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
+            },
+            HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
         )
         self.assertEqual(response.data["results"][0]["restaurant_code"], "서울역")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -83,8 +89,8 @@ class RestaurantListViewTest(APITestCase):
                 "lon": "127.0495556",
                 "range": 100.0,
                 "order_by": "distance",
-            }
-            # HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
+            },
+            HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
         )
         self.assertEqual(response.data["results"][0]["restaurant_code"], "서울역")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -98,8 +104,8 @@ class RestaurantListViewTest(APITestCase):
                 "lon": "127.0495556",
                 "range": 100.0,
                 "order_by": "rating",
-            }
-            # HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
+            },
+            HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
         )
         self.assertEqual(response.data["results"][0]["restaurant_code"], "용산역")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -114,8 +120,8 @@ class RestaurantListViewTest(APITestCase):
                 "range": 100.0,
                 "order_by": "distance",
                 "search": "용산역",
-            }
-            # HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
+            },
+            HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
         )
         self.assertEqual(response.data["results"][0]["restaurant_code"], "용산역")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -131,8 +137,8 @@ class RestaurantListViewTest(APITestCase):
                 "order_by": "distance",
                 "limit": 1,
                 "offset": 1,
-            }
-            # HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
+            },
+            HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
         )
         self.assertEqual(response.data["results"][0]["restaurant_code"], "용산역")
         self.assertEqual(response.data["count"], 1)
@@ -148,8 +154,8 @@ class RestaurantListViewTest(APITestCase):
                 "lon": "127.0495556",
                 "range": 100.0,
                 "order_by": "distance",
-            }
-            # HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
+            },
+            HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
         )
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
@@ -159,22 +165,21 @@ class RestaurantListViewTest(APITestCase):
             data={
                 "type": "hold_location",
                 "range": 100.0,
-            }
-            # HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
+            },
+            HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
         )
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
-    # @TODO: 로그인 로직 구현 후 주석 풀기 @SaJH
-    # def test_get_restaurant_list_fail_unauthenticated(self):
-    # response = self.client.get(
-    #     path=self.view_url,
-    #     data={
-    #         "type": "hold_location",
-    #         "lat": "37.514575",
-    #         "lon": "127.0495556",
-    #         "range": 100.0,
-    #         "order_by": "distance",
-    #         "search": "용산역",
-    #     }
-    # )
-    # self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+    def test_get_restaurant_list_fail_unauthenticated(self):
+        response = self.client.get(
+            path=self.view_url,
+            data={
+                "type": "hold_location",
+                "lat": "37.514575",
+                "lon": "127.0495556",
+                "range": 100.0,
+                "order_by": "distance",
+                "search": "용산역",
+            },
+        )
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
