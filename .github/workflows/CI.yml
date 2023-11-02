@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: cpu
+      - name: cpu
         run: dmidecode -t processor | more
 
-      - uses: ram
+      - name: ram
         run: dmidecode -t memory | more
 
       - uses: actions/checkout@v3
