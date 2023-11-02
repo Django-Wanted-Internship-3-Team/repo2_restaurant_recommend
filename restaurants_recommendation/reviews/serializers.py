@@ -1,9 +1,5 @@
 from rest_framework import serializers
-from rest_framework.serializers import (
-    ModelSerializer,
-    PrimaryKeyRelatedField,
-    ValidationError,
-)
+from rest_framework.serializers import ModelSerializer, PrimaryKeyRelatedField
 
 from restaurants_recommendation.restaurants.models import Restaurant
 from restaurants_recommendation.reviews.models import Review
@@ -39,17 +35,6 @@ class ReviewSerializer(ModelSerializer):
             "created_at",
             "updated_at",
         )
-
-    def validate_rating(self, value):
-        try:
-            rating = int(value)
-        except Exception:
-            raise ValidationError("cannot convert rating to integer.")
-
-        if not (rating >= 0 and rating <= 5):
-            raise ValidationError("rating point must be between 0 to 5.")
-
-        return value
 
     def create(self, validated_data):
         restaurant = validated_data["restaurant"]
