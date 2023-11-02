@@ -9,12 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: cpu
-        run: sudo dmidecode -t processor | more
-
-      - name: ram
-        run: sudo dmidecode -t memory | more
-
       - uses: actions/checkout@v3
 
       - name: Build docker

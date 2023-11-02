@@ -44,7 +44,7 @@ class LocationListView(APIView):
             latitude (str): 위도
         """
         locations = cache.get_or_set(
-            key="locations",
+            key="restaurants:locations",
             default=RestaurantLocation.objects.all(),
             timeout=60 * 60 * 24,
         )
