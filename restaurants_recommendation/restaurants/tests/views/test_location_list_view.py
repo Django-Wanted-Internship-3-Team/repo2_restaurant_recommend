@@ -54,7 +54,7 @@ class LocationListViewTest(APITestCase):
             HTTP_AUTHORIZATION=f"Bearer {self.access_token}",
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertIsNotNone(cache.get("locations"))
+        self.assertIsNotNone(cache.get("restaurants:locations"))
         cache.clear()
 
     def test_get_location_list_fail_unauthenticated(self):
