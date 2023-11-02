@@ -27,6 +27,7 @@ class Restaurant(models.Model):
     latitude = models.CharField(max_length=32)
     longitude = models.CharField(max_length=32)
     rating = models.FloatField(default=0.0)
+    distance = float("inf")
 
     class Meta:
         db_table = "restaurants"

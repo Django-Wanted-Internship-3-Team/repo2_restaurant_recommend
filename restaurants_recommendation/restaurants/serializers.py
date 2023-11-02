@@ -15,6 +15,44 @@ class LocationListSerializer(serializers.ModelSerializer):
         )
 
 
+class RestaurantQuerySerializer(serializers.Serializer):
+    lat = serializers.CharField(required=True)
+    lon = serializers.CharField(required=True)
+    range = serializers.FloatField(default=1.0)
+    order_by = serializers.CharField(required=False, default="distance")
+    type = serializers.CharField(required=False, default="my_location")
+    search = serializers.CharField(required=False, default="")
+    limit = serializers.IntegerField(required=False, default=10, max_value=30)
+    offset = serializers.IntegerField(required=False, default=0)
+
+
+class RestaurantListSerializer(serializers.ModelSerializer):
+    location = LocationListSerializer()
+    distance = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Restaurant
+        fields = (
+            "id",
+            "restaurant_code",
+            "location_code",
+            "location",
+            "business_name",
+            "operating_status",
+            "closure_at",
+            "street_address",
+            "parcel_address",
+            "postal_code",
+            "latitude",
+            "longitude",
+            "rating",
+            "distance",
+        )
+
+    def get_distance(self, obj):
+        return f"{obj.distance} km"
+
+
 class RestaurantDetailSerializer(serializers.ModelSerializer):
     location = LocationListSerializer()
 
