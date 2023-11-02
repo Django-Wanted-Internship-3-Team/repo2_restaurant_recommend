@@ -226,7 +226,7 @@ class RestaurantDetailView(APIView):
             return Response(cached_data, status=status.HTTP_200_OK)
 
         restaurant = get_object_or_404(Restaurant, id=restaurant_id)
-        review_set = restaurant.review_set.all().order_by("-created_at")
+        review_set = restaurant.review_set.all().order_by("-created_at")[:10]
 
         context = {
             "restaurant": RestaurantDetailSerializer(restaurant).data,
