@@ -40,7 +40,7 @@ class UserDetailViewTest(APITestCase):
         )
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
-    def test_valid_user_update(self):
+    def test_valid_user_detail_update_success(self):
         response = self.client.put(
             path=reverse("user_detail", kwargs={"user_id": self.user.id}),
             data=json.dumps({"latitude": "40.7132", "longitude": "-74.0060", "is_lunch_recommend": True}),
@@ -49,7 +49,7 @@ class UserDetailViewTest(APITestCase):
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
-    def test_unauthenticated_user_update(self):
+    def test_unauthenticated_user_detail_update_fail(self):
         response = self.client.put(
             path=reverse("user_detail", kwargs={"user_id": self.user.id}),
             data=json.dumps({"latitude": "40.7132", "longitude": "-74.0060", "is_lunch_recommend": True}),

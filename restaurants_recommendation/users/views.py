@@ -82,7 +82,7 @@ class UserDetailView(APIView):
             updated_at (str): 사용자 계정 수정 일자
         """
         user = get_object_or_404(User, id=user_id)
-        serializer = UserSerializer(user, data=request.data)
+        serializer = UserSerializer(user)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     @swagger_auto_schema(
