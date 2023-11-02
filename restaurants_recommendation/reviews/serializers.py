@@ -1,3 +1,4 @@
+from rest_framework import serializers
 from rest_framework.serializers import (
     ModelSerializer,
     PrimaryKeyRelatedField,
@@ -7,6 +8,20 @@ from rest_framework.serializers import (
 from restaurants_recommendation.restaurants.models import Restaurant
 from restaurants_recommendation.reviews.models import Review
 from restaurants_recommendation.users.models import User
+
+
+class ReviewListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Review
+        fields = (
+            "id",
+            "content",
+            "rating",
+            "user",
+            "restaurant",
+            "created_at",
+            "updated_at",
+        )
 
 
 class ReviewSerializer(ModelSerializer):
