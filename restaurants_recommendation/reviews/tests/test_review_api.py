@@ -65,3 +65,80 @@ class ReviewAPITestCase(APITestCase):
         )
 
         self.assertEqual(response.status_code, status.HTTP_201_CREATED, msg="expected 201")
+
+    def test_post_with_auth_invalid_rating_under0(self):
+        """
+        test 'reviews' post api and invalid rating
+        expected 400
+        """
+
+        user = User.objects.create(username="user")
+        restaurant = Restaurant.objects.create(restaurant_code="abc")
+
+        self.client.force_authenticate(user)
+
+        response = self.client.post(
+            reverse(self.viewname),
+            data=json.dumps(
+                {
+                    "content": "content",
+                    "rating": -1,
+                    "restaurant": restaurant.id,
+                    "user": user.id,
+                },
+            ),
+            content_type="application/json",
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_post_with_auth_invalid_rating_over5(self):
+        """
+        test 'reviews' post api and invalid rating
+        expected 400
+        """
+
+        user = User.objects.create(username="user")
+        restaurant = Restaurant.objects.create(restaurant_code="abc")
+
+        self.client.force_authenticate(user)
+
+        response = self.client.post(
+            reverse(self.viewname),
+            data=json.dumps(
+                {
+                    "content": "content",
+                    "rating": 6,
+                    "restaurant": restaurant.id,
+                    "user": user.id,
+                },
+            ),
+            content_type="application/json",
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_post_with_auth_invalid_restaurant(self):
+        """
+        test
+        """
+
+        user = User.objects.create(username="user")
+        restaurant = Restaurant.objects.create(restaurant_code="abc")
+
+        self.client.force_authenticate(user)
+
+        response = self.client.post(
+            reverse(self.viewname),
+            data=json.dumps(
+                {
+                    "content": "content",
+                    "rating": 5,
+                    "restaurant": 2,
+                    "user": user.id,
+                },
+            ),
+            content_type="application/json",
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
