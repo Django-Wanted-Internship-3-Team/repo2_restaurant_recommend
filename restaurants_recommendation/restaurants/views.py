@@ -219,10 +219,25 @@ class RestaurantDetailView(APIView):
             },...
         ]
         """
+        cache_key = f"restaurant_detail:{restaurant_id}"
+        cached_data = cache.get(key=cache_key)
+
+        if cached_data is not None:
+            return Response(cached_data, status=status.HTTP_200_OK)
+
         restaurant = get_object_or_404(Restaurant, id=restaurant_id)
         review_set = restaurant.review_set.all().order_by("-created_at")
+
         context = {
             "restaurant": RestaurantDetailSerializer(restaurant).data,
             "reviews": ReviewListSerializer(review_set, many=True).data,
         }
+
+        if review_set.count() >= 5:
+            cache.set(
+                key=cache_key,
+                value=context,
+                timeout=600,
+            )
+
         return Response(context, status=status.HTTP_200_OK)
