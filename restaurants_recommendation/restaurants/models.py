@@ -26,6 +26,7 @@ class Restaurant(models.Model):
     latitude = models.CharField(max_length=32)
     longitude = models.CharField(max_length=32)
     rating = models.FloatField(default=0.0)
+    distance = float("inf")
 
     class Meta:
         db_table = "restaurants"
@@ -44,4 +45,4 @@ class RestaurantLocation(models.Model):
         db_table = "restaurant_locations"
 
     def __str__(self):
-        return f"{self.city} {self.district}"
+        return f"{self.do_si} {self.sgg}"
