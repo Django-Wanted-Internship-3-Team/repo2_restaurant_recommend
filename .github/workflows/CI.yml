@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - name: cpu
-        run: dmidecode -t processor | more
+        run: sudo dmidecode -t processor | more
 
       - name: ram
-        run: dmidecode -t memory | more
+        run: sudo dmidecode -t memory | more
 
       - uses: actions/checkout@v3
 
