@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('restaurants', '0003_alter_restaurant_rating'),
+        ('restaurants', '0003_rename_sanitary_sector_restaurant_sanitary_industry_type'),
         ('restaurants', '0004_alter_restaurant_parcel_address_and_more'),
     ]
 
