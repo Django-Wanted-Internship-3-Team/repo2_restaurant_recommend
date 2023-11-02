@@ -13,7 +13,7 @@ class Review(models.Model):
     class Meta:
         db_table = "reviews"
         constraints = [
-            models.CheckConstraint(check=(Q(rating__gte=0) & Q(rating__lte=5)), name="rating_0_to_5_constraint"),
+            models.CheckConstraint(check=Q(rating__gte=0) & Q(rating__lte=5), name="rating_0_to_5_constraint"),
         ]
 
     def __str__(self):
