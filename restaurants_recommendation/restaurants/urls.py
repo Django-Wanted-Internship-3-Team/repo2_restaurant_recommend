@@ -1,7 +1,13 @@
-from django.urls import path
+from typing import List
 
-from restaurants_recommendation.restaurants.views import LocationListView
+from django.urls import URLPattern, path
 
-urlpatterns = [
+from restaurants_recommendation.restaurants.views import (
+    LocationListView,
+    RestaurantDetailView,
+)
+
+urlpatterns: List[URLPattern] = [
     path("locations/", LocationListView.as_view(), name="location_list"),
+    path("<int:restaurant_id>/", RestaurantDetailView.as_view(), name="restaurant_detail"),
 ]
