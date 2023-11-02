@@ -124,8 +124,6 @@ class ReviewAPITestCase(APITestCase):
         """
 
         user = User.objects.create(username="user")
-        restaurant = Restaurant.objects.create(restaurant_code="abc")
-
         self.client.force_authenticate(user)
 
         response = self.client.post(
