@@ -38,3 +38,4 @@ services:
     image: redis:7.2.2
     ports:
       - "6379:6379"
+    restart: on-failure
