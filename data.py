@@ -49,7 +49,7 @@ def map_api_data_to_model(data):
     }
 
 
-async def fetch_rastaurant_count(session, url, endpoint):
+async def fetch_restaurant_count(session, url, endpoint):
     async with session.get(url + endpoint, params={"KEY": API_KEY, "Type": "json"}) as response:
         if response.status == 200:
             data = await response.text()
@@ -81,9 +81,9 @@ async def save_data_to_db(data_list):
         if not (mapped_data["business_name"] and mapped_data["street_address"] and mapped_data["latitude"] and mapped_data["longitude"]):
             continue
 
-        restaurantlocation = await get_restaurant_location(data["SIGUN_NM"].strip())
-        if restaurantlocation:
-            mapped_data["location"] = restaurantlocation
+        restaurant_location = await get_restaurant_location(data["SIGUN_NM"].strip())
+        if restaurant_location:
+            mapped_data["location"] = restaurant_location
 
         await save_or_update_restaurant(mapped_data, mapped_data["business_name"] + "_" + mapped_data["street_address"])
 
@@ -93,7 +93,7 @@ async def data_pipeline(url, endpoints):
         tasks = []
         total_pages = 0
         for endpoint in endpoints:
-            count = await fetch_rastaurant_count(session, url, endpoint)
+            count = await fetch_restaurant_count(session, url, endpoint)
             pages = math.ceil(count / 1000)
             total_pages += pages
 
