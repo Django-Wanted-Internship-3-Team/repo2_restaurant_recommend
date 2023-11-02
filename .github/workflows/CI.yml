@@ -18,8 +18,7 @@ jobs:
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
-        networks:
-          - django-test
+
     steps:
       - uses: actions/checkout@v3
 
@@ -45,5 +44,3 @@ jobs:
         run: |
           docker compose run django poetry run coverage run manage.py test &&
           docker compose run django poetry run coverage report --fail-under=80
-        networks:
-          - django-test
