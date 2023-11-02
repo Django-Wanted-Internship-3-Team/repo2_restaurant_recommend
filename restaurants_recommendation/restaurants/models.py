@@ -25,7 +25,7 @@ class Restaurant(models.Model):
     postal_code = models.CharField(max_length=32, null=True)
     latitude = models.CharField(max_length=32)
     longitude = models.CharField(max_length=32)
-    rating = models.FloatField(null=True)
+    rating = models.FloatField(default=0.0)
 
     class Meta:
         db_table = "restaurants"
