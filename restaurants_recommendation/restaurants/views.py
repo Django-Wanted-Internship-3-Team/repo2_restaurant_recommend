@@ -1,5 +1,6 @@
 from typing import Any, List, Tuple
 
+from django.core.cache import cache
 from django.db.models import QuerySet
 from django.db.models.query_utils import Q
 from drf_yasg.utils import swagger_auto_schema
@@ -42,7 +43,11 @@ class LocationListView(APIView):
             longitude (str): 경도
             latitude (str): 위도
         """
-        locations = RestaurantLocation.objects.all()
+        locations = cache.get_or_set(
+            key="restaurants:locations",
+            default=RestaurantLocation.objects.all(),
+            timeout=60 * 60 * 24,
+        )
         serializer = LocationListSerializer(locations, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
