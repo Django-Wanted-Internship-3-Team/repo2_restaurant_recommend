@@ -54,3 +54,9 @@ class UserLoginSerializer(serializers.Serializer):
             user.is_active = True
             user.save()
         return user
+
+
+class UserDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ("latitude", "longitude", "is_lunch_recommend")

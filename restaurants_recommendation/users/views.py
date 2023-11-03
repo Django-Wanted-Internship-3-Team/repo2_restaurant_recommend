@@ -3,8 +3,10 @@ from rest_framework import permissions, status
 from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 from restaurants_recommendation.users.serializers import (
+    UserDetailSerializer,
     UserLoginSerializer,
     UserSerializer,
     UserSignupSerializer,
@@ -54,6 +56,54 @@ class LoginView(APIView):
             token: access token과 refresh token
         """
         serializer = UserLoginSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+class UserDetailView(APIView):
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
+
+    @swagger_auto_schema(
+        operation_summary="유저 상세 정보 조회",
+        responses={status.HTTP_200_OK: UserSerializer},
+    )
+    def get(self, request: Request, user_id=None) -> Response:
+        """
+        사용자 상세 정보를 조회합니다.
+
+        Returns:
+            username (str): 사용자 계정 이름.
+            latitude (str): 사용자의 위치 중 위도
+            longitude (str): 사용자의 위치 중 경도
+            is_lunch_recommend (bool): 점심 메뉴 추천 사용여부
+            created_at (str): 사용자 계정 생성 일자
+            updated_at (str): 사용자 계정 수정 일자
+        """
+        user = request.user
+        serializer = UserSerializer(user)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+    @swagger_auto_schema(
+        operation_summary="유저 정보 업데이트",
+        request_body=UserDetailSerializer,
+        responses={status.HTTP_200_OK: UserSerializer},
+    )
+    def patch(self, request: Request, user_id=None) -> Response:
+        """
+        사용자의 브라우저를 통해 현재 위치의 위도, 경도 값을 받아 유저의 위치를 업데이트하고, 점심 메뉴 추천 True 또는 False 값을 받아 해당 기능의 사용 여부를 결정할 수 있습니다.
+
+        Args:
+            latitude (str): 사용자의 위치 중 위도
+            longitude (str): 사용자의 위치 중 경도
+            is_lunch_recommend (bool): 점심 메뉴 추천 사용여부
+
+        Returns:
+            User: 위치 정보, 점심 메뉴 추천 정보가 업데이트된 사용자 객체.
+        """
+        user = request.user
+        serializer = UserDetailSerializer(user, data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status=status.HTTP_200_OK)
