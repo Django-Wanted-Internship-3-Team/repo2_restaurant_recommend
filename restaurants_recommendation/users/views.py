@@ -90,7 +90,7 @@ class UserDetailView(APIView):
         request_body=UserDetailSerializer,
         responses={status.HTTP_200_OK: UserSerializer},
     )
-    def put(self, request: Request, user_id=None) -> Response:
+    def patch(self, request: Request, user_id=None) -> Response:
         """
         사용자의 브라우저를 통해 현재 위치의 위도, 경도 값을 받아 유저의 위치를 업데이트하고, 점심 메뉴 추천 True 또는 False 값을 받아 해당 기능의 사용 여부를 결정할 수 있습니다.
 
