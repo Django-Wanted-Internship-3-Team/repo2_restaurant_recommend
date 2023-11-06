@@ -14,7 +14,7 @@ class LatLonModelBase(models.Model):
 
     def distance_with(self, o):
         try:
-            position = [float(self.latitude), float(self.longitute)]
+            position = [float(self.latitude), float(self.longitude)]
             postition_o = [float(o.latitude), float(o.longitude)]
         except ValueError:
             return math.inf
