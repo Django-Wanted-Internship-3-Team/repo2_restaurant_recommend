@@ -47,7 +47,8 @@ class RecommendRestaurantsTestCase(TestCase):
             latitude="40.7132",
             longitude="-70.0060",
             is_lunch_recommend=True,
-            webhook="https://discord.com/api/webhooks/1169806248393314334/40Xh7yJvX5yvBQQEHK0PmogVEX7EyeoapZ7wAB63qmcwPOnML-Qm-282mEVMBx6ljdZu",
+            webhook="https://discord.com/api/webhooks/1169626755942858816/ww2L2TkXDANs0O-lr5Ongsy3P1xwogzJ0GboyTilL6Kxgb22baR8RX2Nyx1IqJNFja-D",
+            # webhook="https://discord.com/api/webhooks/1169806248393314334/40Xh7yJvX5yvBQQEHK0PmogVEX7EyeoapZ7wAB63qmcwPOnML-Qm-282mEVMBx6ljdZu",
         )
 
         Restaurant.objects.create(

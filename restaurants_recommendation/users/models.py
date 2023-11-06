@@ -1,14 +1,13 @@
 from django.contrib.auth.models import AbstractBaseUser
 from django.db import models
 
+from restaurants_recommendation.common.models import LatLonModelBase
 from restaurants_recommendation.users.managers import UserManager
 
 
-class User(AbstractBaseUser):
+class User(AbstractBaseUser, LatLonModelBase):
     username = models.CharField(max_length=32, unique=True)
     password = models.CharField(max_length=128)
-    latitude = models.CharField(max_length=32, null=True)
-    longitude = models.CharField(max_length=32, null=True)
     is_admin = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     is_lunch_recommend = models.BooleanField(default=False)

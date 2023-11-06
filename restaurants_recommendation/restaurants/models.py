@@ -1,7 +1,9 @@
 from django.db import models
 
+from restaurants_recommendation.common.models import LatLonModelBase
 
-class Restaurant(models.Model):
+
+class Restaurant(LatLonModelBase, models.Model):
     restaurant_code = models.CharField(max_length=128, unique=True)
     location_code = models.CharField(max_length=64, null=True)
     location = models.ForeignKey("RestaurantLocation", on_delete=models.SET_NULL, null=True)
@@ -24,8 +26,6 @@ class Restaurant(models.Model):
     street_address = models.CharField(max_length=128, null=True)
     parcel_address = models.CharField(max_length=128, null=True)
     postal_code = models.CharField(max_length=32, null=True)
-    latitude = models.CharField(max_length=32)
-    longitude = models.CharField(max_length=32)
     rating = models.FloatField(default=0.0)
     distance = float("inf")
 
@@ -36,11 +36,9 @@ class Restaurant(models.Model):
         return self.business_name
 
 
-class RestaurantLocation(models.Model):
+class RestaurantLocation(LatLonModelBase, models.Model):
     do_si = models.CharField(max_length=32, help_text="도,시")
     sgg = models.CharField(max_length=32, help_text="시,군,구")
-    longitude = models.CharField(max_length=32)
-    latitude = models.CharField(max_length=32)
 
     class Meta:
         db_table = "restaurant_locations"
