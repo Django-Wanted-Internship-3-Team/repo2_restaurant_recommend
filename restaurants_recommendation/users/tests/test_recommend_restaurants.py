@@ -42,13 +42,16 @@ class RecommendRestaurantsTestCase(TestCase):
     def test_recommend_restaurant_scheduler(self, mock_now):
         mock_now.return_value = datetime(2023, 11, 6, 12, 0, 0)  # mon
 
+        discord_url = "https://discord.com/api/webhooks/"
+        channel_id = "1169806248393314334"
+        token = "40Xh7yJvX5yvBQQEHK0PmogVEX7EyeoapZ7wAB63qmcwPOnML-Qm-282mEVMBx6ljdZu"
+
         User.objects.create(
             username="user",
             latitude="40.7132",
             longitude="-70.0060",
             is_lunch_recommend=True,
-            webhook="https://discord.com/api/webhooks/1169626755942858816/ww2L2TkXDANs0O-lr5Ongsy3P1xwogzJ0GboyTilL6Kxgb22baR8RX2Nyx1IqJNFja-D",
-            # webhook="https://discord.com/api/webhooks/1169806248393314334/40Xh7yJvX5yvBQQEHK0PmogVEX7EyeoapZ7wAB63qmcwPOnML-Qm-282mEVMBx6ljdZu",
+            webhook=f"{discord_url}{channel_id}/{token}",
         )
 
         Restaurant.objects.create(

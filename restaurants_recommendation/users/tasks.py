@@ -13,15 +13,12 @@ def demo():
 def recommend_restaurants(user: User, distance: float = 0.5, count: int = 5):
     """식당 추천 기능"""
 
-    try:
-        # TODO : replace to query statement.
-        qeuryset = Restaurant.objects.all()
-        restaurants = [restaurant for restaurant in qeuryset if restaurant.distance_with(user) <= 0.5]
-        restaurants.sort(key=lambda r: r.rating, reverse=True)
+    # TODO : replace to query statement.
+    qeuryset = Restaurant.objects.all()
+    restaurants = [restaurant for restaurant in qeuryset if restaurant.distance_with(user) <= 0.5]
+    restaurants.sort(key=lambda r: r.rating, reverse=True)
 
-        return restaurants[:5]
-    except Exception as e:  # float parsing exception.
-        return []
+    return restaurants[:5]
 
 
 def post_webhook(user: User):

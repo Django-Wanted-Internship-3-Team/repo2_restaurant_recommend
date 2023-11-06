@@ -16,7 +16,7 @@ class LatLonModelBase(models.Model):
         try:
             position = [float(self.latitude), float(self.longitute)]
             postition_o = [float(o.latitude), float(o.longitude)]
-        except:
+        except ValueError:
             return math.inf
 
         return lat_lon_to_km(position, postition_o)
