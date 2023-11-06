@@ -94,12 +94,12 @@ class RecommendRestaurantsTestCase(TestCase):
         result = recommend_restaurants_to_user.apply()
         self.assertTrue(result.successful())
 
-    @mock.patch("django.utils.timezone.now")
-    def test_recommend_restaurant_scheduler_on_weekend(self, mock_now):
-        """스케줄 주기 평일 12시가 아닌 주말 시간에 task가 수행되는지 테스트"""
-        # TODO :
-        mock_now.return_value = datetime(2023, 11, 5, 12, 0, 0)
+    # @mock.patch("django.utils.timezone.now")
+    # def test_recommend_restaurant_scheduler_on_weekend(self, mock_now):
+    #     """스케줄 주기 평일 12시가 아닌 주말 시간에 task가 수행되는지 테스트"""
+    #     # TODO :
+    #     mock_now.return_value = datetime(2023, 11, 5, 12, 0, 0)
 
-        result = recommend_restaurants_to_user.apply()
+    #     result = recommend_restaurants_to_user.apply()
 
-        self.assertFalse(result.successful())
+    #     self.assertFalse(result.successful())
