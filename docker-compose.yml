@@ -39,3 +39,21 @@ services:
     ports:
       - "6379:6379"
     restart: on-failure
+
+  celery-worker:
+    container_name: celery-worker
+    build: .
+    command: poetry run celery -A config worker --loglevel=info
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+
+  celery-beat:
+    container_name: celery-beat
+    build: .
+    command: poetry run celery -A config beat --loglevel=info
+    volumes:
+      - .:/app
+    depends_on:
+      - redis

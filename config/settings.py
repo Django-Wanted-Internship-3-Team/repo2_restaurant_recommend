@@ -205,3 +205,13 @@ CACHES = {
         },
     }
 }
+
+# Celery
+CELERY_BROKER_URL = env.str("CELERY_BROKER_URL", default="redis://redis:6379/1")
+CELERY_RESULT_BACKEND = env.str("CELERY_RESULT_BACKEND", default="redis://redis:6379/2")
+CELERY_BEAT_SCHEDULE = {
+    "demo-scheduled-task": {
+        "task": "restaurants_recommendation.users.tasks.demo",
+        "schedule": 5.0,  # 5.0 sec interval
+    }
+}
