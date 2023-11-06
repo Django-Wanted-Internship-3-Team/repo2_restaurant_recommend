@@ -15,8 +15,8 @@ def recommend_restaurants(user: User, distance: float = 0.5, count: int = 5):
 
     try:
         # TODO : replace to query statement.
-        restaurants = Restaurant.objects.all()
-        restaurants = [restaurant for restaurant in restaurants if restaurant.distance_with(user) <= 0.5]
+        qeuryset = Restaurant.objects.all()
+        restaurants = [restaurant for restaurant in qeuryset if restaurant.distance_with(user) <= 0.5]
         restaurants.sort(key=lambda r: r.rating, reverse=True)
 
         return restaurants[:5]
