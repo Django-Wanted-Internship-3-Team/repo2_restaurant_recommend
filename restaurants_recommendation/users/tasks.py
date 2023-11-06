@@ -25,3 +25,11 @@ def recommend_restaurants(user: User, distance: float = 0.5, count: int = 5):
         return restaurants[:5]
     except Exception as e:  # float parsing exception.
         return []
+
+
+@shared_task
+def recommend_restaurants_to_user():
+    users = User.objects.filter(is_lunch_recommend=True)
+
+    for user in users:
+        recommend_restaurants(user)

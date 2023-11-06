@@ -1,8 +1,14 @@
+from datetime import datetime
+from unittest import mock
+
 from django.test import TestCase
 
 from restaurants_recommendation.restaurants.models import Restaurant
 from restaurants_recommendation.users.models import User
-from restaurants_recommendation.users.tasks import recommend_restaurants
+from restaurants_recommendation.users.tasks import (
+    recommend_restaurants,
+    recommend_restaurants_to_user,
+)
 
 
 class RecommendRestaurantsTestCase(TestCase):
@@ -31,3 +37,20 @@ class RecommendRestaurantsTestCase(TestCase):
 
         self.assertIn(restaurant_in_0, restaurants)
         self.assertNotIn(restaurant_notin_0, restaurants)
+
+    @mock.patch("django.utils.timezone.now")
+    def test_recommend_restaurant_scheduler(self, mock_now):
+        mock_now.return_value = datetime(2023, 11, 6, 12, 0, 0)  # mon
+
+        result = recommend_restaurants_to_user.apply()
+        self.assertTrue(result.successful())
+
+    @mock.patch("django.utils.timezone.now")
+    def test_recommend_restaurant_scheduler_on_weekend(self, mock_now):
+        """스케줄 주기 평일 12시가 아닌 주말 시간에 task가 수행되는지 테스트"""
+        # TODO :
+        mock_now.return_value = datetime(2023, 11, 5, 12, 0, 0)
+
+        result = recommend_restaurants_to_user.apply()
+
+        self.assertFalse(result.successful())
