@@ -197,6 +197,16 @@ SIMPLE_JWT = {
     "JTI_CLAIM": "jti",
 }
 
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": env.str("REDIS_URL", default="redis://localhost:6379"),
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        },
+    }
+}
+
 APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
 
 SCHEDULER_DEFAULT = True

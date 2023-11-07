@@ -7,11 +7,12 @@ on:
 jobs:
   django-test:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
       - name: Build docker
-        run: docker compose build
+        run: docker compose up -d --build
 
       - name: Run mypy
         run: docker compose run django poetry run mypy --config mypy.ini restaurants_recommendation/

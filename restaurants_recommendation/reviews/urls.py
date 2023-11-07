@@ -1,3 +1,9 @@
-from typing import Callable, List
+from typing import List
 
-urlpatterns: List[Callable] = []
+from django.urls import URLPattern, path
+
+from restaurants_recommendation.reviews.views import ReviewAPIView
+
+urlpatterns: List[URLPattern] = [
+    path(r"", ReviewAPIView.as_view(), name="reviews"),
+]
