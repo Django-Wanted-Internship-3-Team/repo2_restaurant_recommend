@@ -22,6 +22,7 @@ ALLOWED_HOSTS = ["*"]
 THIRD_PARTY_APPS = [
     "rest_framework",
     "drf_yasg",
+    "django_apscheduler",
 ]
 
 LOCAL_APPS = [
@@ -195,3 +196,7 @@ SIMPLE_JWT = {
     "TOKEN_TYPE_CLAIM": "token_type",
     "JTI_CLAIM": "jti",
 }
+
+APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
+
+SCHEDULER_DEFAULT = True

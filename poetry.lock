@@ -597,6 +597,21 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-apscheduler"
+version = "0.6.2"
+description = "APScheduler for Django"
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-apscheduler-0.6.2.tar.gz", hash = "sha256:60ced2c07b531b0477076dfef2d6de4790a983a4bbd75fae5e387ac360e9c8fd"},
+    {file = "django_apscheduler-0.6.2-py3-none-any.whl", hash = "sha256:d30a05be98e01c12aa50d0a7afd8d0fd529c874d1c75af20891b6417d2f36475"},
+]
+
+[package.dependencies]
+apscheduler = ">=3.2,<4.0"
+django = ">=3.2"
+
+[[package]]
 name = "django-environ"
 version = "0.11.2"
 description = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
@@ -1653,4 +1668,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "c7f191c43c756966e62892f1e4c8df01c6b19aab7a880b8daf732e43b2517e03"
+content-hash = "78650ea6ae4cdabab9940d99fc0cca6d4c7b1527dc3d00753627d06bf6e3684a"
