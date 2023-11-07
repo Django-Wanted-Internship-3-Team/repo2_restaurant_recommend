@@ -71,7 +71,7 @@ class RecommendRestaurantsTestCase(TestCase):
             latitude="40.7132",
             longitude="-70.0060",
             is_lunch_recommend=True,
-            webhook=f"test_webhook-url",
+            webhook="test_webhook-url",
         )
 
         Restaurant.objects.create(
