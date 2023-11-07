@@ -2,13 +2,22 @@ from datetime import datetime
 from unittest import mock
 
 from django.test import TestCase
+from rest_framework import status
 
 from restaurants_recommendation.restaurants.models import Restaurant
 from restaurants_recommendation.users.models import User
 from restaurants_recommendation.users.tasks import (
+    post_webhook,
     recommend_restaurants,
     recommend_restaurants_to_user,
 )
+
+
+def discord_webhook_mock(url, json):
+    mock_response = mock.Mock()
+    mock_response.status_code = 200
+
+    return mock_response
 
 
 class RecommendRestaurantsTestCase(TestCase):
@@ -38,20 +47,31 @@ class RecommendRestaurantsTestCase(TestCase):
         self.assertIn(restaurant_in_0, restaurants)
         self.assertNotIn(restaurant_notin_0, restaurants)
 
-    @mock.patch("django.utils.timezone.now")
-    def test_recommend_restaurant_scheduler(self, mock_now):
-        mock_now.return_value = datetime(2023, 11, 6, 12, 0, 0)  # mon
+    @mock.patch("requests.post", side_effect=discord_webhook_mock)
+    def test_webhook(self, mock_post):
+        user = User.objects.create(
+            username="user",
+            latitude="40.7000",
+            longitude="-70.0060",
+            is_lunch_recommend=True,
+            webhook="test-webhook-url",
+        )
 
-        discord_url = "https://discord.com/api/webhooks/"
-        channel_id = "1169806248393314334"
-        token = "40Xh7yJvX5yvBQQEHK0PmogVEX7EyeoapZ7wAB63qmcwPOnML-Qm-282mEVMBx6ljdZu"
+        response = post_webhook(user)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    @mock.patch("requests.post", side_effect=discord_webhook_mock)
+    @mock.patch("django.utils.timezone.now")
+    def test_recommend_restaurant_scheduler(self, mock_now, mock_request):
+        # TODO : 주말, 주간 나눠서 테스트 필요.
+        mock_now.return_value = datetime(2023, 11, 6, 12, 0, 0)  # mon
 
         User.objects.create(
             username="user",
             latitude="40.7132",
             longitude="-70.0060",
             is_lunch_recommend=True,
-            webhook=f"{discord_url}{channel_id}/{token}",
+            webhook=f"test_webhook-url",
         )
 
         Restaurant.objects.create(
@@ -93,13 +113,3 @@ class RecommendRestaurantsTestCase(TestCase):
 
         result = recommend_restaurants_to_user.apply()
         self.assertTrue(result.successful())
-
-    # @mock.patch("django.utils.timezone.now")
-    # def test_recommend_restaurant_scheduler_on_weekend(self, mock_now):
-    #     """스케줄 주기 평일 12시가 아닌 주말 시간에 task가 수행되는지 테스트"""
-    #     # TODO :
-    #     mock_now.return_value = datetime(2023, 11, 5, 12, 0, 0)
-
-    #     result = recommend_restaurants_to_user.apply()
-
-    #     self.assertFalse(result.successful())

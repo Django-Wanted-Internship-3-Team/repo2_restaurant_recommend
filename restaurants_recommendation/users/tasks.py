@@ -33,7 +33,7 @@ def post_webhook(user: User):
         ],
     }
 
-    requests.post(user.webhook, json=data)
+    return requests.post(user.webhook, json=data)
 
 
 @shared_task
