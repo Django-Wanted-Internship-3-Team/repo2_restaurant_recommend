@@ -5,11 +5,6 @@ from restaurants_recommendation.restaurants.models import Restaurant
 from restaurants_recommendation.users.models import User
 
 
-@shared_task
-def demo():
-    return "demo"
-
-
 def recommend_restaurants(user: User, distance: float = 0.5, count: int = 5):
     """식당 추천 기능"""
 
