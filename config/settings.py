@@ -24,6 +24,7 @@ ALLOWED_HOSTS = ["*"]
 THIRD_PARTY_APPS = [
     "rest_framework",
     "drf_yasg",
+    "django_apscheduler",
 ]
 
 LOCAL_APPS = [
@@ -217,3 +218,7 @@ CELERY_BEAT_SCHEDULE = {
         "schedule": crontab(hour=12, day_of_week="mon-fri"),  # weekday at 12pm
     }
 }
+
+APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
+
+SCHEDULER_DEFAULT = True

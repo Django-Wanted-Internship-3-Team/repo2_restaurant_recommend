@@ -24,6 +24,7 @@ tqdm = "^4.66.1"
 apscheduler = "^3.10.4"
 django-redis = "^5.4.0"
 celery = "^5.3.4"
+django-apscheduler = "^0.6.2"
 
 
 [tool.poetry.group.dev.dependencies]
