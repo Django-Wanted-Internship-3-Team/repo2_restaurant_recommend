@@ -1,0 +1,2952 @@
+[
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 1,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "강릉시",
+        "longitude": "128.8784972",
+        "latitude": "37.74913611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 2,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "고성군",
+        "longitude": "128.4701639",
+        "latitude": "38.37796111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 3,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "동해시",
+        "longitude": "129.1166333",
+        "latitude": "37.52193056"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 4,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "삼척시",
+        "longitude": "129.1674889",
+        "latitude": "37.44708611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 5,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "속초시",
+        "longitude": "128.5941667",
+        "latitude": "38.204275"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 6,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "양구군",
+        "longitude": "127.9922444",
+        "latitude": "38.10729167"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 7,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "양양군",
+        "longitude": "128.6213556",
+        "latitude": "38.07283333"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 8,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "영월군",
+        "longitude": "128.4640194",
+        "latitude": "37.18086111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 9,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "원주시",
+        "longitude": "127.9220556",
+        "latitude": "37.33908333"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 10,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "인제군",
+        "longitude": "128.1726972",
+        "latitude": "38.06697222"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 11,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "정선군",
+        "longitude": "128.6630861",
+        "latitude": "37.37780833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 12,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "철원군",
+        "longitude": "127.3157333",
+        "latitude": "38.14405556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 13,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "춘천시",
+        "longitude": "127.7323111",
+        "latitude": "37.87854167"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 14,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "태백시",
+        "longitude": "128.9879972",
+        "latitude": "37.16122778"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 15,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "평창군",
+        "longitude": "128.3923528",
+        "latitude": "37.36791667"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 16,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "홍천군",
+        "longitude": "127.8908417",
+        "latitude": "37.69442222"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 17,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "화천군",
+        "longitude": "127.7103556",
+        "latitude": "38.10340833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 18,
+      "fields": {
+        "do_si": "강원",
+        "sgg": "횡성군",
+        "longitude": "127.9872222",
+        "latitude": "37.48895833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 19,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "가평군",
+        "longitude": "127.5117778",
+        "latitude": "37.82883056"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 20,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "강화군",
+        "longitude": "126.49",
+        "latitude": "37.74385833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 21,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "고양시",
+        "longitude": "126.7770556",
+        "latitude": "37.65590833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 22,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "과천시",
+        "longitude": "126.9898",
+        "latitude": "37.42637222"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 23,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "광명시",
+        "longitude": "126.8667083",
+        "latitude": "37.47575"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 24,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "광주시",
+        "longitude": "127.2577861",
+        "latitude": "37.41450556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 25,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "구리시",
+        "longitude": "127.1318639",
+        "latitude": "37.591625"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 26,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "군포시",
+        "longitude": "126.9375",
+        "latitude": "37.35865833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 27,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "김포시",
+        "longitude": "126.7177778",
+        "latitude": "37.61245833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 28,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "남양주시",
+        "longitude": "127.2186333",
+        "latitude": "37.63317778"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 29,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "동두천시",
+        "longitude": "127.0626528",
+        "latitude": "37.90091667"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 30,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "부천시",
+        "longitude": "126.766",
+        "latitude": "37.5035917"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 31,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "성남시",
+        "longitude": "127.1477194",
+        "latitude": "37.44749167"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 32,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "수원시",
+        "longitude": "127.0122222",
+        "latitude": "37.30101111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 33,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "시흥시",
+        "longitude": "126.8050778",
+        "latitude": "37.37731944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 34,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "안산시",
+        "longitude": "126.8468194",
+        "latitude": "37.29851944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 35,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "안성시",
+        "longitude": "127.2818444",
+        "latitude": "37.005175"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 36,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "안양시",
+        "longitude": "126.9533556",
+        "latitude": "37.3897"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 37,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "양주시",
+        "longitude": "127.0478194",
+        "latitude": "37.78245"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 38,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "양평군",
+        "longitude": "127.4898861",
+        "latitude": "37.48893611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 39,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "여주군",
+        "longitude": "127.652958",
+        "latitude": "37.324606"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 40,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "여주시",
+        "longitude": "127.6396222",
+        "latitude": "37.29535833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 41,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "연천군",
+        "longitude": "127.0770667",
+        "latitude": "38.09336389"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 42,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "오산시",
+        "longitude": "127.0796417",
+        "latitude": "37.14691389"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 43,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "옹진군",
+        "longitude": "126.6388889",
+        "latitude": "37.443725"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 44,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "용인시",
+        "longitude": "127.2038444",
+        "latitude": "37.23147778"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 45,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "의왕시",
+        "longitude": "126.9703889",
+        "latitude": "37.34195"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 46,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "의정부시",
+        "longitude": "127.0358417",
+        "latitude": "37.73528889"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 47,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "이천시",
+        "longitude": "127.4432194",
+        "latitude": "37.27543611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 48,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "파주시",
+        "longitude": "126.7819528",
+        "latitude": "37.75708333"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 49,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "평택시",
+        "longitude": "127.1146556",
+        "latitude": "36.98943889"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 50,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "포천시",
+        "longitude": "127.2024194",
+        "latitude": "37.89215556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 51,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "하남시",
+        "longitude": "127.217",
+        "latitude": "37.53649722"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 52,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "화성시",
+        "longitude": "126.8335306",
+        "latitude": "37.19681667"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 53,
+      "fields": {
+        "do_si": "경기",
+        "sgg": "인천시",
+        "longitude": "126.7059186",
+        "latitude": "37.45617301"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 54,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "거제시",
+        "longitude": "128.6233556",
+        "latitude": "34.87735833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 55,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "거창군",
+        "longitude": "127.9116556",
+        "latitude": "35.683625"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 56,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "경산시",
+        "longitude": "128.7434639",
+        "latitude": "35.82208889"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 57,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "경주시",
+        "longitude": "129.2270222",
+        "latitude": "35.85316944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 58,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "고령군",
+        "longitude": "128.2650222",
+        "latitude": "35.72298611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 59,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "고성군",
+        "longitude": "128.3245417",
+        "latitude": "34.9699"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 60,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "구미시",
+        "longitude": "128.3467778",
+        "latitude": "36.11655"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 61,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "군위군",
+        "longitude": "128.5750778",
+        "latitude": "36.23999722"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 62,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "기장군",
+        "longitude": "129.224475",
+        "latitude": "35.24135"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 63,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "김천시",
+        "longitude": "128.1158",
+        "latitude": "36.13689722"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 64,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "김해시",
+        "longitude": "128.8916667",
+        "latitude": "35.22550556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 65,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "남해군",
+        "longitude": "127.8944667",
+        "latitude": "34.83455833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 66,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "달성군",
+        "longitude": "128.433275",
+        "latitude": "35.77168056"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 67,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "마산시",
+        "longitude": "128.567863",
+        "latitude": "35.196874"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 68,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "문경시",
+        "longitude": "128.1890194",
+        "latitude": "36.58363056"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 69,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "밀양시",
+        "longitude": "128.7489444",
+        "latitude": "35.50077778"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 70,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "봉화군",
+        "longitude": "128.734875",
+        "latitude": "36.89026111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 71,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "사천시",
+        "longitude": "128.0667778",
+        "latitude": "35.00028333"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 72,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "산청군",
+        "longitude": "127.8756194",
+        "latitude": "35.41249167"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 73,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "상주시",
+        "longitude": "128.1612639",
+        "latitude": "36.40796944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 74,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "성주군",
+        "longitude": "128.2851528",
+        "latitude": "35.91621111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 75,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "안동시",
+        "longitude": "128.7316222",
+        "latitude": "36.56546389"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 76,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "양산시",
+        "longitude": "129.0394111",
+        "latitude": "35.33192778"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 77,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "영덕군",
+        "longitude": "129.3683556",
+        "latitude": "36.41210278"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 78,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "영양군",
+        "longitude": "129.1146222",
+        "latitude": "36.664275"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 79,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "영주시",
+        "longitude": "128.6263444",
+        "latitude": "36.80293611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 80,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "영천시",
+        "longitude": "128.940775",
+        "latitude": "35.97005278"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 81,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "예천군",
+        "longitude": "128.4550222",
+        "latitude": "36.65495000"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 82,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "울릉군",
+        "longitude": "130.9037889",
+        "latitude": "37.48057500"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 83,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "울주군",
+        "longitude": "129.2971639",
+        "latitude": "35.53073889"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 84,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "울진군",
+        "longitude": "129.4027861",
+        "latitude": "36.99018611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 85,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "의령군",
+        "longitude": "128.2638222",
+        "latitude": "35.31911944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 86,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "의성군",
+        "longitude": "128.6993639",
+        "latitude": "36.34975833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 87,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "진주시",
+        "longitude": "128.1100000",
+        "latitude": "35.17703333"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 88,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "진해시",
+        "longitude": "128.710081",
+        "latitude": "35.1330600"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 89,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "창녕군",
+        "longitude": "128.4945333",
+        "latitude": "35.54153611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 90,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "창원시",
+        "longitude": "128.6401544",
+        "latitude": "35.2540033"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 91,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "청도군",
+        "longitude": "128.7362000",
+        "latitude": "35.64431111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 92,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "청송군",
+        "longitude": "129.0594000",
+        "latitude": "36.43329167"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 93,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "칠곡군",
+        "longitude": "128.4037972",
+        "latitude": "35.99254722"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 94,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "통영시",
+        "longitude": "128.4352778",
+        "latitude": "34.85125833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 95,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "포항시",
+        "longitude": "129.3616667",
+        "latitude": "36.00568611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 96,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "하동군",
+        "longitude": "127.7534306",
+        "latitude": "35.06420278"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 97,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "함안군",
+        "longitude": "128.4087083",
+        "latitude": "35.26940556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 98,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "함양군",
+        "longitude": "127.7274194",
+        "latitude": "35.51746944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 99,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "합천군",
+        "longitude": "128.1679306",
+        "latitude": "35.56361667"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 100,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "부산시",
+        "longitude": "129.075",
+        "latitude": "35.1798"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 101,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "대구시",
+        "longitude": "128.6017",
+        "latitude": "35.8715"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 102,
+      "fields": {
+        "do_si": "경상",
+        "sgg": "울산시",
+        "longitude": "129.3123",
+        "latitude": "35.546"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 103,
+      "fields": {
+        "do_si": "광주시",
+        "sgg": "광산구",
+        "longitude": "126.793668",
+        "latitude": "35.13995836"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 104,
+      "fields": {
+        "do_si": "광주시",
+        "sgg": "남구",
+        "longitude": "126.9025572",
+        "latitude": "35.13301749"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 105,
+      "fields": {
+        "do_si": "광주시",
+        "sgg": "동구",
+        "longitude": "126.9230903",
+        "latitude": "35.14627776"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 106,
+      "fields": {
+        "do_si": "광주시",
+        "sgg": "북구",
+        "longitude": "126.9010806",
+        "latitude": "35.1812138"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 107,
+      "fields": {
+        "do_si": "광주시",
+        "sgg": "서구",
+        "longitude": "126.8895063",
+        "latitude": "35.1525164"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 108,
+      "fields": {
+        "do_si": "대구시",
+        "sgg": "달서구",
+        "longitude": "128.5350639",
+        "latitude": "35.82692778"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 109,
+      "fields": {
+        "do_si": "대구시",
+        "sgg": "수성구",
+        "longitude": "128.6328667",
+        "latitude": "35.85520833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 110,
+      "fields": {
+        "do_si": "대구시",
+        "sgg": "남구",
+        "longitude": "128.597702",
+        "latitude": "35.84621351"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 111,
+      "fields": {
+        "do_si": "대구시",
+        "sgg": "달서구",
+        "longitude": "128.5325905",
+        "latitude": "35.82997744"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 112,
+      "fields": {
+        "do_si": "대구시",
+        "sgg": "달성군",
+        "longitude": "128.4313995",
+        "latitude": "35.77475029"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 113,
+      "fields": {
+        "do_si": "대구시",
+        "sgg": "동구",
+        "longitude": "128.6355584",
+        "latitude": "35.88682728"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 114,
+      "fields": {
+        "do_si": "대구시",
+        "sgg": "북구",
+        "longitude": "128.5828924",
+        "latitude": "35.8858646"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 115,
+      "fields": {
+        "do_si": "대구시",
+        "sgg": "서구",
+        "longitude": "128.5591601",
+        "latitude": "35.87194054"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 116,
+      "fields": {
+        "do_si": "대구시",
+        "sgg": "수성구",
+        "longitude": "128.6307011",
+        "latitude": "35.85835148"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 117,
+      "fields": {
+        "do_si": "대구시",
+        "sgg": "중구",
+        "longitude": "128.6061745",
+        "latitude": "35.86952722"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 118,
+      "fields": {
+        "do_si": "대전시",
+        "sgg": "대덕구",
+        "longitude": "127.4170933",
+        "latitude": "36.35218384"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 119,
+      "fields": {
+        "do_si": "대전시",
+        "sgg": "동구",
+        "longitude": "127.4548596",
+        "latitude": "36.31204028"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 120,
+      "fields": {
+        "do_si": "대전시",
+        "sgg": "서구",
+        "longitude": "127.3834158",
+        "latitude": "36.35707299"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 121,
+      "fields": {
+        "do_si": "대전시",
+        "sgg": "유성구",
+        "longitude": "127.3561363",
+        "latitude": "36.36405586"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 122,
+      "fields": {
+        "do_si": "대전시",
+        "sgg": "중구",
+        "longitude": "127.421381",
+        "latitude": "36.32582989"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 123,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "강서구",
+        "longitude": "128.9829083",
+        "latitude": "35.20916389"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 124,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "금정구",
+        "longitude": "129.0943194",
+        "latitude": "35.24007778"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 125,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "남구",
+        "longitude": "129.0865",
+        "latitude": "35.13340833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 126,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "동구",
+        "longitude": "129.059175",
+        "latitude": "35.13589444"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 127,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "동래구",
+        "longitude": "129.0858556",
+        "latitude": "35.20187222"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 128,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "부산진구",
+        "longitude": "129.0553194",
+        "latitude": "35.15995278"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 129,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "북구",
+        "longitude": "128.992475",
+        "latitude": "35.19418056"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 130,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "사상구",
+        "longitude": "128.9933333",
+        "latitude": "35.14946667"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 131,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "사하구",
+        "longitude": "128.9770417",
+        "latitude": "35.10142778"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 132,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "서구",
+        "longitude": "129.0263778",
+        "latitude": "35.09483611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 133,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "수영구",
+        "longitude": "129.115375",
+        "latitude": "35.14246667"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 134,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "연제구",
+        "longitude": "129.082075",
+        "latitude": "35.17318611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 135,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "영도구",
+        "longitude": "129.0701861",
+        "latitude": "35.08811667"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 136,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "중구",
+        "longitude": "129.0345083",
+        "latitude": "35.10321667"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 137,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "해운대구",
+        "longitude": "129.1658083",
+        "latitude": "35.16001944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 138,
+      "fields": {
+        "do_si": "부산시",
+        "sgg": "기장군",
+        "longitude": "129.2222873",
+        "latitude": "35.24477541"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 139,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "강남구",
+        "longitude": "127.0495556",
+        "latitude": "37.514575"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 140,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "강동구",
+        "longitude": "127.1258639",
+        "latitude": "37.52736667"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 141,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "강북구",
+        "longitude": "127.0277194",
+        "latitude": "37.63695556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 142,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "강서구",
+        "longitude": "126.851675",
+        "latitude": "37.54815556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 143,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "관악구",
+        "longitude": "126.9538444",
+        "latitude": "37.47538611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 144,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "광진구",
+        "longitude": "127.0845333",
+        "latitude": "37.53573889"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 145,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "구로구",
+        "longitude": "126.8895972",
+        "latitude": "37.49265"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 146,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "금천구",
+        "longitude": "126.9041972",
+        "latitude": "37.44910833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 147,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "노원구",
+        "longitude": "127.0583889",
+        "latitude": "37.65146111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 148,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "도봉구",
+        "longitude": "127.0495222",
+        "latitude": "37.66583333"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 149,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "동대문구",
+        "longitude": "127.0421417",
+        "latitude": "37.571625"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 150,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "동작구",
+        "longitude": "126.941575",
+        "latitude": "37.50965556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 151,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "마포구",
+        "longitude": "126.9105306",
+        "latitude": "37.56070556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 152,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "서대문구",
+        "longitude": "126.9388972",
+        "latitude": "37.57636667"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 153,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "서초구",
+        "longitude": "127.0348111",
+        "latitude": "37.48078611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 154,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "성동구",
+        "longitude": "127.039",
+        "latitude": "37.56061111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 155,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "성북구",
+        "longitude": "127.0203333",
+        "latitude": "37.58638333"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 156,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "송파구",
+        "longitude": "127.1079306",
+        "latitude": "37.51175556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 157,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "양천구",
+        "longitude": "126.8687083",
+        "latitude": "37.51423056"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 158,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "영등포구",
+        "longitude": "126.8983417",
+        "latitude": "37.52361111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 159,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "용산구",
+        "longitude": "126.9675222",
+        "latitude": "37.53609444"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 160,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "은평구",
+        "longitude": "126.9312417",
+        "latitude": "37.59996944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 161,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "종로구",
+        "longitude": "126.9816417",
+        "latitude": "37.57037778"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 162,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "중구",
+        "longitude": "126.9996417",
+        "latitude": "37.56100278"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 163,
+      "fields": {
+        "do_si": "서울",
+        "sgg": "중랑구",
+        "longitude": "127.0947778",
+        "latitude": "37.60380556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 164,
+      "fields": {
+        "do_si": "울산시",
+        "sgg": "남구",
+        "longitude": "129.3301754",
+        "latitude": "35.54404265"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 165,
+      "fields": {
+        "do_si": "울산시",
+        "sgg": "동구",
+        "longitude": "129.4166919",
+        "latitude": "35.50516996"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 166,
+      "fields": {
+        "do_si": "울산시",
+        "sgg": "북구",
+        "longitude": "129.361245",
+        "latitude": "35.58270783"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 167,
+      "fields": {
+        "do_si": "울산시",
+        "sgg": "울주군",
+        "longitude": "129.2424748",
+        "latitude": "35.52230648"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 168,
+      "fields": {
+        "do_si": "울산시",
+        "sgg": "중구",
+        "longitude": "129.3328162",
+        "latitude": "35.56971228"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 169,
+      "fields": {
+        "do_si": "인천시",
+        "sgg": "강화군",
+        "longitude": "126.4878417",
+        "latitude": "37.74692907"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 170,
+      "fields": {
+        "do_si": "인천시",
+        "sgg": "계양구",
+        "longitude": "126.737744",
+        "latitude": "37.53770728"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 171,
+      "fields": {
+        "do_si": "인천시",
+        "sgg": "남구",
+        "longitude": "126.6502972",
+        "latitude": "37.46369169"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 172,
+      "fields": {
+        "do_si": "인천시",
+        "sgg": "남동구",
+        "longitude": "126.7309669",
+        "latitude": "37.44971062"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 173,
+      "fields": {
+        "do_si": "인천시",
+        "sgg": "동구",
+        "longitude": "126.6432441",
+        "latitude": "37.47401607"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 174,
+      "fields": {
+        "do_si": "인천시",
+        "sgg": "미추홀구",
+        "longitude": "126.6502972",
+        "latitude": "37.46369169"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 175,
+      "fields": {
+        "do_si": "인천시",
+        "sgg": "부평구",
+        "longitude": "126.7219068",
+        "latitude": "37.50784204"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 176,
+      "fields": {
+        "do_si": "인천시",
+        "sgg": "서구",
+        "longitude": "126.6759616",
+        "latitude": "37.54546372"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 177,
+      "fields": {
+        "do_si": "인천시",
+        "sgg": "연수구",
+        "longitude": "126.6782658",
+        "latitude": "37.41038125"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 178,
+      "fields": {
+        "do_si": "인천시",
+        "sgg": "중구",
+        "longitude": "126.6217617",
+        "latitude": "37.47384843"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 179,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "강진군",
+        "longitude": "126.7691972",
+        "latitude": "34.63891111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 180,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "고창군",
+        "longitude": "126.7041083",
+        "latitude": "35.43273889"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 181,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "고흥군",
+        "longitude": "127.2870556",
+        "latitude": "34.60806944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 182,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "곡성군",
+        "longitude": "127.2941083",
+        "latitude": "35.27895556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 183,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "광양시",
+        "longitude": "127.6981778",
+        "latitude": "34.93753611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 184,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "구례군",
+        "longitude": "127.4649333",
+        "latitude": "35.19945833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 185,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "군산시",
+        "longitude": "126.7388444",
+        "latitude": "35.96464167"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 186,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "김제시",
+        "longitude": "126.8827528",
+        "latitude": "35.800575"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 187,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "나주시",
+        "longitude": "126.7128667",
+        "latitude": "35.01283889"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 188,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "남원시",
+        "longitude": "127.3925",
+        "latitude": "35.41325556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 189,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "담양군",
+        "longitude": "126.9901639",
+        "latitude": "35.318125"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 190,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "목포시",
+        "longitude": "126.3944194",
+        "latitude": "34.80878889"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 191,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "무안군",
+        "longitude": "126.4837",
+        "latitude": "34.98736944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 192,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "무주군",
+        "longitude": "127.6628667",
+        "latitude": "36.00382778"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 193,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "보성군",
+        "longitude": "127.0820889",
+        "latitude": "34.76833333"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 194,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "부안군",
+        "longitude": "126.7356778",
+        "latitude": "35.72853333"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 195,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "순창군",
+        "longitude": "127.1396306",
+        "latitude": "35.37138889"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 196,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "순천시",
+        "longitude": "127.4893306",
+        "latitude": "34.94760556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 197,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "신안군",
+        "longitude": "126.3817306",
+        "latitude": "34.78981111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 198,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "여수시",
+        "longitude": "127.6643861",
+        "latitude": "34.75731111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 199,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "영광군",
+        "longitude": "126.5140861",
+        "latitude": "35.27416667"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 200,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "영암군",
+        "longitude": "126.6986194",
+        "latitude": "34.79698889"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 201,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "완도군",
+        "longitude": "126.7570972",
+        "latitude": "34.30785278"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 202,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "완주군",
+        "longitude": "127.1495972",
+        "latitude": "35.84296944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 203,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "익산시",
+        "longitude": "126.9598528",
+        "latitude": "35.945275"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 204,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "임실군",
+        "longitude": "127.2847528",
+        "latitude": "35.60806389"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 205,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "장성군",
+        "longitude": "126.786975",
+        "latitude": "35.29881111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 206,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "장수군",
+        "longitude": "127.5233",
+        "latitude": "35.64429722"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 207,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "장흥군",
+        "longitude": "126.9091083",
+        "latitude": "34.678525"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 208,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "전주시",
+        "longitude": "127.1219194",
+        "latitude": "35.80918889"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 209,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "정읍시",
+        "longitude": "126.8581111",
+        "latitude": "35.56687222"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 210,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "진도군",
+        "longitude": "126.2655444",
+        "latitude": "34.48375"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 211,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "진안군",
+        "longitude": "127.4269667",
+        "latitude": "35.78871944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 212,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "함평군",
+        "longitude": "126.5186194",
+        "latitude": "35.06274444"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 213,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "해남군",
+        "longitude": "126.6012889",
+        "latitude": "34.57043611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 214,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "화순군",
+        "longitude": "126.9885667",
+        "latitude": "35.06148056"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 215,
+      "fields": {
+        "do_si": "전라",
+        "sgg": "광주시",
+        "longitude": "127.2551569",
+        "latitude": "37.42949814"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 216,
+      "fields": {
+        "do_si": "제주",
+        "sgg": "서귀포시",
+        "longitude": "126.5125556",
+        "latitude": "33.25235"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 217,
+      "fields": {
+        "do_si": "제주",
+        "sgg": "제주시",
+        "longitude": "126.5332083",
+        "latitude": "33.49631111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 218,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "갈매로",
+        "longitude": "128.6035528",
+        "latitude": "35.86854167"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 219,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "계룡시",
+        "longitude": "127.2509306",
+        "latitude": "36.27183611"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 220,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "고운동",
+        "longitude": "127.236112",
+        "latitude": "36.519901"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 221,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "공주시",
+        "longitude": "127.1211194",
+        "latitude": "36.44361389"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 222,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "괴산군",
+        "longitude": "127.7888306",
+        "latitude": "36.81243056"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 223,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "국책연구원1로",
+        "longitude": "127.29562",
+        "latitude": "36.488994"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 224,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "금남면",
+        "longitude": "127.28035",
+        "latitude": "36.463826"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 225,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "금산군",
+        "longitude": "127.4903083",
+        "latitude": "36.10586944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 226,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "나리1로",
+        "longitude": "126.613277",
+        "latitude": "36.891878"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 227,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "나리로",
+        "longitude": "126.613277",
+        "latitude": "36.891878"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 228,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "남세종로",
+        "longitude": "127.289448",
+        "latitude": "36.479522"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 229,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "노을3로",
+        "longitude": "127.258565",
+        "latitude": "36.47944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 230,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "논산시",
+        "longitude": "127.1009111",
+        "latitude": "36.18420278"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 231,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "누리로",
+        "longitude": "127.252375",
+        "latitude": "36.475097"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 232,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "다솜1로",
+        "longitude": "127.254501",
+        "latitude": "36.516156"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 233,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "다정남로",
+        "longitude": "127.241922",
+        "latitude": "36.493402"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 234,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "다정동",
+        "longitude": "127.234917",
+        "latitude": "36.500442"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 235,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "다정북로",
+        "longitude": "127.255849",
+        "latitude": "36.49573"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 236,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "다정중앙로",
+        "longitude": "127.246898",
+        "latitude": "36.496682"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 237,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "단양군",
+        "longitude": "128.3678417",
+        "latitude": "36.98178056"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 238,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "달빛1로",
+        "longitude": "127.2463",
+        "latitude": "36.509374"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 239,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "달빛로",
+        "longitude": "127.25066",
+        "latitude": "36.508065"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 240,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "당진군",
+        "longitude": "127.684597",
+        "latitude": "36.881997"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 241,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "당진시",
+        "longitude": "126.6302528",
+        "latitude": "36.89075"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 242,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "대평로",
+        "longitude": "127.282581",
+        "latitude": "36.469407"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 243,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "도담동",
+        "longitude": "127.2623972",
+        "latitude": "36.51731111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 244,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "도움1로",
+        "longitude": "127.247611",
+        "latitude": "36.502796"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 245,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "도움3로",
+        "longitude": "127.249982",
+        "latitude": "36.504689"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 246,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "마음로",
+        "longitude": "127.232222",
+        "latitude": "36.518492"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 247,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "마음안1로",
+        "longitude": "127.236121",
+        "latitude": "36.517357"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 248,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "마음안로",
+        "longitude": "127.236121",
+        "latitude": "36.517357"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 249,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "만남로",
+        "longitude": "127.160304",
+        "latitude": "36.822626"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 250,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "보듬2로",
+        "longitude": "127.265305",
+        "latitude": "36.51288"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 251,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "보듬3로",
+        "longitude": "127.265305",
+        "latitude": "36.51288"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 252,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "보듬4로",
+        "longitude": "127.265305",
+        "latitude": "36.51288"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 253,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "보람동",
+        "longitude": "127.28094",
+        "latitude": "36.478112"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 254,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "보람동로",
+        "longitude": "127.28094",
+        "latitude": "36.478112"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 255,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "보람로",
+        "longitude": "127.28094",
+        "latitude": "36.478112"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 256,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "보령시",
+        "longitude": "126.6148861",
+        "latitude": "36.330575"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 257,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "보은군",
+        "longitude": "127.7316083",
+        "latitude": "36.48653333"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 258,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "부강면",
+        "longitude": "127.370376",
+        "latitude": "36.527112"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 259,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "부여군",
+        "longitude": "126.9118639",
+        "latitude": "36.27282222"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 260,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "새롬남로",
+        "longitude": "127.254403",
+        "latitude": "36.479121"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 261,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "새롬동",
+        "longitude": "127.254403",
+        "latitude": "36.479121"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 262,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "새롬북로",
+        "longitude": "127.254403",
+        "latitude": "36.479121"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 263,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "새롬중앙로",
+        "longitude": "127.254403",
+        "latitude": "36.479121"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 264,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "서산시",
+        "longitude": "126.4521639",
+        "latitude": "36.78209722"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 265,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "서천군",
+        "longitude": "126.6938889",
+        "latitude": "36.07740556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 266,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "소담동",
+        "longitude": "127.3000509",
+        "latitude": "36.488897"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 267,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "소정면",
+        "longitude": "127.1582525",
+        "latitude": "36.7223175"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 268,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "시청대로",
+        "longitude": "127.296956",
+        "latitude": "36.484202"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 269,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "아름동",
+        "longitude": "127.2482222",
+        "latitude": "36.51204167"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 270,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "아산시",
+        "longitude": "127.0046417",
+        "latitude": "36.78710556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 271,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "연기군",
+        "longitude": "127.282781",
+        "latitude": "36.474616"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 272,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "연기면",
+        "longitude": "127.2737741",
+        "latitude": "36.5418737"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 273,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "연동면",
+        "longitude": "127.3268658",
+        "latitude": "36.5590889"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 274,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "연서면",
+        "longitude": "127.2716217",
+        "latitude": "36.592587"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 275,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "영동군",
+        "longitude": "127.7856111",
+        "latitude": "36.17205833"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 276,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "예산군",
+        "longitude": "126.850875",
+        "latitude": "36.67980556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 277,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "옥천군",
+        "longitude": "127.5736333",
+        "latitude": "36.30355"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 278,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "음성군",
+        "longitude": "127.6926222",
+        "latitude": "36.93740556"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 279,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "장군면",
+        "longitude": "127.2056006",
+        "latitude": "36.4967934"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 280,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "전의면",
+        "longitude": "127.1955125",
+        "latitude": "36.6812513"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 281,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "절재로",
+        "longitude": "127.262509",
+        "latitude": "36.50843"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 282,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "제천시",
+        "longitude": "128.1931528",
+        "latitude": "37.12976944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 283,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "조치원읍",
+        "longitude": "127.298399",
+        "latitude": "36.604528"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 284,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "종촌동",
+        "longitude": "127.247612",
+        "latitude": "36.5119569"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 285,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "증평군",
+        "longitude": "127.5832889",
+        "latitude": "36.78218056"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 286,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "진천군",
+        "longitude": "127.4376444",
+        "latitude": "36.85253889"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 287,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "천안시",
+        "longitude": "127.1524667",
+        "latitude": "36.804125"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 288,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "청양군",
+        "longitude": "126.8042556",
+        "latitude": "36.45626944"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 289,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "청원군",
+        "longitude": "127.431119",
+        "latitude": "36.549748"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 290,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "청주시",
+        "longitude": "127.5117306",
+        "latitude": "36.58399722"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 291,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "충주시",
+        "longitude": "127.9281444",
+        "latitude": "36.98818056"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 292,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "태안군",
+        "longitude": "126.299975",
+        "latitude": "36.74266667"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 293,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "한누리대로",
+        "longitude": "127.289926",
+        "latitude": "36.48545"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 294,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "홍성군",
+        "longitude": "126.6629083",
+        "latitude": "36.59836111"
+      }
+    },
+    {
+      "model": "restaurants.restaurantlocation",
+      "pk": 295,
+      "fields": {
+        "do_si": "충청",
+        "sgg": "대전시",
+        "longitude": "127.3848616",
+        "latitude": "36.3506295"
+      }
+    }
+  ]
