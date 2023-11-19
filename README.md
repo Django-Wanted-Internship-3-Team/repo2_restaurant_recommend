@@ -83,7 +83,7 @@ docker compose run django poetry run python3 manage.py test restaurants_recommen
 
 [restraunt_recommendation](https://www.erdcloud.com/d/k4hLqewZtByfS74Mt)
 
-<img width="678" alt="스크린샷 2023-11-09 오후 3 03 52" src="https://github.com/Django-Wanted-Internship-3-Team/repo2_restaurant_recommend/assets/104830931/37dca3e5-3b5f-4e40-a95e-3d563e2b376e">
+<img width="699" alt="image" src="https://github.com/Django-Wanted-Internship-3-Team/repo2_restaurant_recommend/assets/104830931/3e7a8330-ceea-4ac2-8e4a-d490f9e75ab9">
 
 ## 데이터
 
